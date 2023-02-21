@@ -1,0 +1,76 @@
+<html>
+<head>
+    
+
+    
+    <!-- Bootstrap CSS File -->
+     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     
+    
+   
+
+    
+    <style>
+        .all{
+          width: 50%;
+          height: auto;
+          margin: 50px auto;
+          border: 2px solid black;
+          padding: 50px;
+          text-align: center;
+          border-radius: 20px;
+          background: linear-gradient( to top ,rgb(185, 198, 255) ,rgb(225, 230, 240),  rgb(243, 237, 237) );
+          box-shadow: 10px 10px 10px rgb(58, 47, 47);
+      
+        } 
+       .all .log{
+         height: 30px;
+          border: 1.5px solid rgba(8, 8, 8, 0.973);
+          margin-left: 5px;
+          width: 110px;
+          background-color: rgb(180, 191, 224);
+
+        }
+
+      .all  input{
+       
+ margin: 10px ;
+ border: 0px;
+ background-color: rgba(253, 253, 253, 0.918);
+ border-radius: 5px 5px 5px 5px;
+ box-shadow: 10px 10px 10px rgb(160, 161, 209);
+ border-bottom: 2px solid rgb(205, 241, 240);
+  }
+
+
+
+.all .form-control{
+width: 70% !important ;
+}
+
+        </style>
+</head>
+<body>
+<br><br><br>
+<section class="all"> 
+   <!-- <form method="POST" action="login.php">
+
+        <input type="text" name="id">
+        <input class="log" type="submit" value= "logout" name="logout" >
+        <input class="log" type="submit" value= "logIn" name="login" >
+    </form>-->
+
+    <form class="form-inline" method="POST" action="login.php">
+          
+          <input  type="text" name="id" placeholder="ID" class="form-control" id="inputPassword2" style="width: 300px;">
+        
+        <br><br>    
+        <div class="form-group mx-sm-3 mb-2">
+            
+          <input class="log" type="submit" value= "logout" name="logout"  >  
+          <input class="log" type="submit" value= "logIn" name="login" >
+        </div>
+      </form>
+</section>
+</body>
+</html>

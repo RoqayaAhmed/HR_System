@@ -1,0 +1,23 @@
+
+.log {
+    border: black solid 1.5px !important; 
+    width:500px !important;
+    background-image: linear-gradient(to bottom,
+    rgba(162, 168, 252, 0.904),
+     rgba(37, 31, 145, 0.788),
+    rgba(94, 71, 197, 0.911));
+    
+   /* background-color: rgb(208, 177, 235); */
+    height: 35px  !important;
+    color: black;
+    transition: all 0.4s;
+    
+}
+
+.log:hover
+{
+    background-color:rgb(135, 174, 233);
+    /*transform: scale(1.1,1.1); */
+
+
+}

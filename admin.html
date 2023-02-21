@@ -1,0 +1,93 @@
+
+<html>
+<head>
+    
+
+    
+    <!-- Bootstrap CSS File -->
+     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     
+   
+    <link rel="stylesheet" href="admin.css">
+
+    <style>
+  .all{
+    width: 50%;
+          height: auto;
+          margin: 50px auto;
+          border: 2px solid black;
+          padding: 50px;
+          border-radius: 20px;
+          background: linear-gradient( to top ,rgb(185, 198, 255) ,rgb(225, 230, 240),  rgb(243, 237, 237) );
+          box-shadow: 10px 10px 10px rgb(58, 47, 47);
+      
+
+  }  
+    body{
+      background-color: rgb(224, 217, 217);
+    }
+.log {
+    border: black solid 1.5px !important; 
+    width:70% !important;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom,
+    rgba(183, 191, 233, 0.904),
+    rgba(9, 10, 32, 0.911));
+    
+   /* background-color: rgb(208, 177, 235); */
+    height: 50px  !important;
+    color: rgb(247, 229, 229);
+    transition: all 0.4s;
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+.log:hover{
+  transform: scale(1.1,1.1);
+}
+
+  .all  input{
+    margin: 10px ;
+ border: 0px;
+ background-color: rgba(253, 253, 253, 0.918);
+ border-radius: 5px 5px 5px 5px;
+ box-shadow: 10px 10px 10px rgb(160, 161, 209);
+ border-bottom: 2px solid rgb(205, 241, 240);
+  }
+  ::placeholder{
+    color:red;
+  }
+ 
+    </style> 
+</head>
+<body>
+<br><br><br>
+<section class="all"> 
+<center>
+  
+        <form method="POST" action="admin.php" class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputPassword2" class="sr-only">Password</label>
+                        <input type="text"  name="name" class="form-control" id="inputPassword2" placeholder="Name">
+                      </div>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputPassword2" class="sr-only">Password</label>
+                  <input type="password" name="pass" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <br> <br>
+                <input class="log" type="submit" value= "login" name="login" >
+                <!--<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>-->
+              </form>
+            </fieldset>
+              
+    <!--<form method="POST" action="admin.php">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="pass" placeholder="Password">
+        <br> <br>
+        <input class="log" type="submit" value= "login" name="login" >
+    </form>-->
+
+</center>
+</section>
+</body>
+</html>
